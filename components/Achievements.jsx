@@ -19,7 +19,7 @@ const achievementList = [
     {
         prefix: '~',
         metrics: 'Users',
-        value: '100,000',
+        value: '100',
     },
     {
         metrics: 'Awards',
@@ -43,7 +43,7 @@ const Achievements = () => {
                     return (
                         <div 
                         
-                        className='flex flex-col items-center justify-center mx-4'
+                        className='flex flex-col items-center justify-center mx-2'
                         key={index}>
                             <h2
                             
