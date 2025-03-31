@@ -30,7 +30,7 @@ const ProjectsData =[
         tag: ["All", "web"],
         gitUrl: "/",
         preViewUrl: "https://deliveryon.netlify.app/",
-    },
+      },
     {
       id: 4,
       title: "Bliss Foods",
@@ -39,7 +39,17 @@ const ProjectsData =[
       tag: ["All", "web"],
       gitUrl: "/",
       preViewUrl: "https://blissfoods.netlify.app/",
-  },
+    },
+
+    {
+      id: 5,
+      title: "MOTORWORLD",
+      description: "MotorWorld Site. A site built using React, JSX, Vite, TSX",
+      image: "/images/motor.png",
+      tag: ["All", "web"],
+      gitUrl: "/",
+      preViewUrl: "https://motor-chi.vercel.app/",
+    },
 ]
 
 

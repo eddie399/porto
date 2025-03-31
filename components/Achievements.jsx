@@ -43,7 +43,7 @@ const Achievements = () => {
                     return (
                         <div 
                         
-                        className='flex flex-col items-center justify-center mx-2'
+                        className='hidden lg:block flex-col items-center justify-center mx-1'
                         key={index}>
                             <h2
                             
