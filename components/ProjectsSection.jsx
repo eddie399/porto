@@ -13,8 +13,18 @@ const ProjectsData =[
         gitUrl: "/",
         preViewUrl: "https://findmyhomemw.netlify.app/",
     },
+
+    {
+      id: 2,
+      title: "Vixen_Dashboard",
+      description: "A site where you can Buy Electronic Gadgets. Built using Vite, React, TypeScript, JavaScript",
+      image: "/images/vixen.png",
+      tag: ["All", "Mobile"],
+      gitUrl: "/",
+      preViewUrl: "https://vixenshoppers.netlify.app/",
+  },
      {
-        id: 2,
+        id: 3,
         title: "Eddy's Cafe",
         description: "A coffee site, order now!. Free delivery",
         image: "/images/coffee.png",
@@ -23,7 +33,7 @@ const ProjectsData =[
         preViewUrl: "https://cafe-marine.netlify.app/",
     },
      {
-        id: 3,
+        id: 4,
         title: "TIMELINE",
         description: "TIMELINE Delivery Service Site. A site built using React, JSX, Vite, TSX",
         image: "/images/timeline.png",
@@ -32,7 +42,7 @@ const ProjectsData =[
         preViewUrl: "https://deliveryon.netlify.app/",
       },
     {
-      id: 4,
+      id: 5,
       title: "Bliss Foods",
       description: "Typescript, Javascript, Next.Js",
       image: "/images/bliss.png",
@@ -42,7 +52,7 @@ const ProjectsData =[
     },
 
     {
-      id: 5,
+      id: 6,
       title: "MOTORWORLD",
       description: "MotorWorld Site. A site built using React, JSX, Vite, TSX",
       image: "/images/motor.png",
