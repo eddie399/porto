@@ -60,7 +60,35 @@ const ProjectsData =[
       gitUrl: "/",
       preViewUrl: "https://motor-chi.vercel.app/",
     },
+    {
+      id: 7,
+      title: "Movie Site",
+      description: "A Disney clone. A site built using React, JSX, Vite, and API integration for dynamic movie listing",
+      image: "/images/disney.png",
+      tag: ["All", "web"],
+      gitUrl: "/",
+      preViewUrl: "https://dsmoviesiteclone.netlify.app/",
+    },
+    {
+      id: 8,
+      title: "Gadget Zone",
+      description: "A site for all Electronic gadgets. A site built using React, JSX, Vite, and API integration for dynamic electronics listing",
+      image: "/images/gadget.png",
+      tag: ["All", "web"],
+      gitUrl: "/",
+      preViewUrl: "https://gadget-zone-six.vercel.app/",
+    },
+    {
+      id: 9,
+      title: "Mini_Weather_Site",
+      description: "A site for weather updates. A site built using React, JSX, Vite, and API integration for dynamic weather updates",
+      image: "/images/weather.png",
+      tag: ["All", "web"],
+      gitUrl: "/",
+      preViewUrl: "https://splendid-halva-d12440.netlify.app/",
+    },
 ]
+
 
 
 

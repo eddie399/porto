@@ -11,7 +11,9 @@ const TAB_DATA =[
             <ul className='list-disc pl-2'>
                 <li>Node.js</li>
                 <li>Django</li>
-                <li>PostgreQL</li>
+                <li>TypeScript</li>
+                <li>JavaScript</li>
+                <li>PostgreSQL</li>
                 <li>React</li>
                 <li>WIX</li>
 
