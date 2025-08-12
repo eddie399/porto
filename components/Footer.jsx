@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer className='footer border border-t-[#33353F] border-l-transparent border-r-transparent text-white'>
         
-        <div className="flex flex-row items-center justify-center space-x-2 mb-1 relative lg:top-20">
+        <div className="flex flex-row items-center justify-center space-x-2 mb-1 relative lg:top-20 top-3">
           <a href="https://github.com/eddie399" rel="noreferrer" target="_blank">
             <AiOutlineGithub
               className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
@@ -68,7 +68,7 @@ const Footer = () => {
         
         <div className="container p-12 flex justify-between">
             <h2>EDISTER<span className='text-orange-700 text-2xl'>.</span></h2>
-            <p>© 2025 EJ PIXELS</p>
+            <p className='mt-2'>© 2025 EJ PIXELS</p>
         </div>
     </footer>
   )

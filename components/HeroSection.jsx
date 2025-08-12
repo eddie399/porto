@@ -56,14 +56,14 @@ const HeroSection = () => {
               possible. I am excited to see where my career takes me and am
               always open to new opportunities. 
                 </p>
-                <div>
+                <div className='pb-6'>
                   <a href="#contact">
-                    <button data-aos="flip-left" className='px-6 py-2 rounded-full mr-3 text-white width-full sm:w-fit bg-gradient-to-br from-blue-400 via-green-400 to-purple-800  hover:bg-slate-800'>Hire Me</button>
+                    <button data-aos="flip-left" className='px-6 py-2 rounded-full mr-3 text-white width-full sm:w-fit bg-gradient-to-br from-blue-400 via-green-400 to-purple-800 hover:bg-slate-800'>Hire Me</button>
                   </a>
                    <a href="/Edister_Ndamera_Resume.pdf" download="resume">
-                        <button data-aos="flip-right" className='px-1 py-1 rounded-full mr-3 width-full sm:w-fit bg-gradient-to-br from-orange-500 via-purple-400 to-orange-800 hover:bg-slate-800 text-white mt-3'>
+                        <button data-aos="flip-right" className='px-1 py-1 rounded-full mr-3 width-full sm:w-fit bg-gradient-to-br from-orange-500 via-purple-400 to-orange-800  hover:bg-slate-800 text-white mt-3'>
                         
-                            <span className='block bg-slate-500 hover:bg-slate-800 rounded-full px-5 py-1'>Download CV</span>
+                            <span className='block bg-slate-400 hover:bg-slate-800 rounded-full px-5 py-1'>Download CV</span>
                         
                         </button>
                     </a>
@@ -72,7 +72,7 @@ const HeroSection = () => {
             <div className="col-span-4 place-self-center mt-4 lg:mt-0">
                  <div data-aos="zoom-in"className='rounded-lg relative bg-[#181818] w-[200px] h-[200px] lg:h-[300px] lg:w-[300px] mix-blend-lighten'>
                    <Image
-                   className='absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 opacity-60'
+                   className='absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 opacity-80'
                    src={pass}
                    alt='pick'
                    width={200}

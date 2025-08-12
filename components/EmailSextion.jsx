@@ -82,7 +82,7 @@ const EmailSextion = () => {
             className='text-[#ADB7BE] mb-4 max-w-md'>
                 {" "}
                 I&apos;m currently looking for new opportunities, my inbox is always open.
-                Whether its a question or you just wanna say hi, i&apos;ll try my best to get back to you.
+                Whether its a question or you just wanna say hi,<span className='text-orange-500'> i&apos;ll do my best to get back to you.</span>
             </p>
            
         </div>
@@ -94,13 +94,13 @@ const EmailSextion = () => {
                         <label className='text-white block mb-2 text-sm font-medium' htmlFor="email" type='email'>Your Email</label>
                         <input
                         className='bg-[#18191E] border-[#33353F] placeholder-[#9CA2A9] text-gray-100 rounded-lg text-sm block w-full p-2.5'
-                        name='email' type='email' id='email' required placeholder='enter your email'/>
+                        name='email' type='email' id='email' required placeholder='Email here....'/>
                     </div>
                     <div className='mb-4'>
                         <label className='text-white block mb-2 text-sm font-medium' htmlFor="subject" type='text'>Subject</label>
                         <input
                         className='bg-[#18191E] border-[#33353F] placeholder-[#9CA2A9] text-gray-100 rounded-lg text-sm block w-full p-2.5'
-                        name='subject' type='text' id='subject' required placeholder='Your Subject Here!'/>
+                        name='subject' type='text' id='subject' required placeholder='Subject here....'/>
                     </div>
 
                     <div>
@@ -111,12 +111,12 @@ const EmailSextion = () => {
                         name='message'
                         id='message'
                         className='bg-[#18191E] border-[#33353F] placeholder-[#9CA2A9] text-gray-100 rounded-lg text-sm block w-full p-2.5'
-                        placeholder="Hi, i'm Lex,i would like to talk about......"
+                        placeholder="Talk to edister here......"
                         rows={9}
                         />
                     </div>
                     <div>
-                        <button type='submit' className='bg-blue-500 mt-4 hover:bg-slate-400 text-white rounded-lg font-medium p-2.5 w-full'>
+                        <button type='submit' className='bg-orange-400 mt-4 hover:bg-slate-400 text-white rounded-lg font-medium p-2.5 w-full'>
                             SEND MESSAGE
                         </button>
                         

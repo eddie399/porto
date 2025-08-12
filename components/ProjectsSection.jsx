@@ -4,8 +4,19 @@ import ProjectsCard from './ProjectsCard'
 import ProjectTag from './ProjectTag'
 
 const ProjectsData =[
+   
     {
         id: 1,
+        title: "Venduza Malawi",
+        description: "A Malawian E-commerce site. NextJS 15, Typescript, JavaScript, Stripe",
+        image: "/images/vend.png",
+        tag: ["All", "Mobile"],
+        gitUrl: "/",
+        preViewUrl: "https://venduzamw.vercel.app/",
+    },
+
+     {
+        id: 2,
         title: "My Home",
         description: "A site where you can Buy, Sale, Rent a house or Shop",
         image: "/images/my_home.png",
@@ -14,15 +25,6 @@ const ProjectsData =[
         preViewUrl: "https://findmyhomemw.netlify.app/",
     },
 
-    {
-        id: 2,
-        title: "Venduza Malawi",
-        description: "A Malawian E-commerce site. NextJS 15, Typescript, JavaScript, Stripe",
-        image: "/images/vend.png",
-        tag: ["All", "Mobile"],
-        gitUrl: "/",
-        preViewUrl: "https://venduzamw.vercel.app/",
-    },
 
     {
       id: 3,

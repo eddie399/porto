@@ -35,14 +35,14 @@ const Navbar = () => {
             EDISTER<span className='text-5xl text-orange-700'>.</span>
             
             </Link>
-            <div className='mobile-menu block md:hidden'>
+            <div className='mobile-menu block md:hidden relative top-2'>
               {
                 !navbarOpen ? (
-                  <button onClick={() => setNavbarOpen(true)} className='flex items-center px-3 py-2 rounded border-blue-400 text-blue-400 hover:text-white hover:border-white'>
+                  <button onClick={() => setNavbarOpen(true)} className='flex items-center px-3 py-2 rounded border-orange-400 text-orange-400 hover:text-white hover:border-white'>
                   <Bars3Icon className='h-7 w-7'/>
                   </button>
                 ) : (
-                  <button onClick={() => setNavbarOpen(false)} className='flex items-center px-3 py-2 rounded border-blue-400 text-blue-400 hover:text-white hover:border-white'>
+                  <button onClick={() => setNavbarOpen(false)} className='flex items-center px-3 py-2 rounded border-orange-400 text-orange-500 hover:text-white hover:border-white'>
                    <XMarkIcon className='h-7 w-7'/>
                   </button>
                 )

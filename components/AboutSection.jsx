@@ -99,10 +99,10 @@ const AboutSection = () => {
                 I graduated from DMI-St. John The Baptist University, Blantyre in 2024
               with a BS in Computer Science and have been working in the
               field ever since.
-              I have a wide range of hobbies and passions that keep me busy.
-              From reading, playing sports, traveling, to making YouTube videos,
-              I am always seeking new experiences and love to keep myself
-              engaged and learning new things.
+              Outside of work, I have a wide range of hobbies and passions that keep me engaged,
+              including reading, playing sports, traveling, and creating YouTube videos,
+              I am always eager to explore new experiences and<span className='text-green-400'> continously expand my skills and knowledge.</span>
+              
                 </p>
                 <div data-aos="fade-up"
                  data-aos-duration="1000" 
