@@ -8,7 +8,7 @@ const TAB_DATA =[
         title: "skills",
         id: "skills",
         content: (
-            <ul className='list-disc pl-2'>
+            <ul className='list-disc pl-2 text-cyan-900 dark:text-gray-200'>
                 <li>Node.js</li>
                 <li>Django</li>
                 <li>TypeScript</li>
@@ -24,7 +24,7 @@ const TAB_DATA =[
         title: "Education",
         id: "Education",
         content: (
-            <ul className='list-disc pl-2'>
+            <ul className='list-disc pl-2 text-cyan-900 dark:text-gray-200'>
                 <li>
                     MUBAS <br/>
                     Advanced Diploma in Telecommunications Engineering
@@ -45,7 +45,7 @@ const TAB_DATA =[
         title: "certifications",
         id: "certifications",
         content: (
-            <ul className='list-disc pl-2'>
+            <ul className='list-disc pl-2 text-cyan-900 dark:text-gray-200'>
                 <li>
                     IBM <br/>
                     CyberSecurity
@@ -90,18 +90,18 @@ const AboutSection = () => {
             data-aos-easing="ease-in-sine"
             src="/images/pub.jpg" alt='picture' width={500} height={500} className='rounded-xl' />
             <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-                <h2 data-aos="zoom-in-down" className='text-white font-bold text-4xl mb-4'>About Me</h2>
+                <h2 data-aos="zoom-in-down" className='text-cyan-900 dark:text-white font-bold text-4xl mb-4'>About Me</h2>
                 <p 
                 data-aos="slide-left" 
                 data-aos-easing="linear"
                 data-aos-duration="1000"
-                className="text-base lg:text-lg">
-                I graduated from DMI-St. John The Baptist University, Blantyre in 2024
-              with a BS in Computer Science and have been working in the
-              field ever since.
-              Outside of work, I have a wide range of hobbies and passions that keep me engaged,
-              including reading, playing sports, traveling, and creating YouTube videos,
-              I am always eager to explore new experiences and<span className='text-green-400'> continously expand my skills and knowledge.</span>
+                className="text-cyan-900 dark:text-gray-200 text-base lg:text-lg">
+                    I graduated from DMI-St. John The Baptist University, Blantyre in 2024
+                with a BS in Computer Science and have been working in the
+                field ever since.
+                Outside of work, I have a wide range of hobbies and passions that keep me engaged,
+                including reading, playing sports, traveling, and creating YouTube videos,
+                I am always eager to explore new experiences and<span className='text-green-400 font-medium'> continously expand my skills and knowledge.</span>
               
                 </p>
                 <div data-aos="fade-up"

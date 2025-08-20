@@ -23,7 +23,8 @@ const achievementList = [
     },
     {
         metrics: 'Awards',
-        value: '7',
+        value: '2',
+        postfix: '+',
     },
     {
         metrics: 'Years',
@@ -36,8 +37,8 @@ const achievementList = [
 
 const Achievements = () => {
   return (
-    <div className='py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
-        <div className="sm:border-[#33353F] sm:border rounded-md py-8 px-19 flex flex-row items-center justify-between">
+    <div className='py-8 px-4 xl:gap-16 sm:py-16 xl:px-12'>
+        <div className="sm:border-cyan-900 shadow-sm sm:border rounded-md py-8 px-19 flex flex-row items-center justify-between">
             {
                 achievementList.map((achievement, index) => {
                     return (
@@ -47,14 +48,14 @@ const Achievements = () => {
                         key={index}>
                             <h2
                             
-                              className='text-white text-4xl font-bold flex flex-row'
+                              className='text-orange-500 text-4xl font-bold flex flex-row'
                             >
                                 {achievement.prefix}
                                 <AnimatedNumbers 
                                 includeComma
                                 animateToNumber={parseInt(achievement.value)}
                                 locale="en-US"
-                                className="text-white text-4xl font-bold"
+                                className="text-cyan-900 dark:text-white text-4xl font-bold"
                                 configs={((_, index) => {
                                     return {
                                         mass: 1,
@@ -67,7 +68,7 @@ const Achievements = () => {
                                 {achievement.postfix}
                             </h2>
                             <p
-                            className='text-base text-[#ADB7BE]'
+                            className='text-base text-[#ADB7BE] '
                             >{achievement.metrics}</p>
                         </div>
                     )

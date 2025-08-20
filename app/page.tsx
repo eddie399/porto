@@ -26,7 +26,7 @@ export default function Home() {
   });
   
   return (
-    <main className='flex min-h-screen flex-col bg-[#212121] overflow-x-hidden'>
+    <main className='flex min-h-screen flex-col bg-[#ffffff] dark:bg-[#1c1d22] overflow-x-hidden'>
       <Navbar />
       <div className="container  mt-24 mx-auto py-4 px-12"> 
         

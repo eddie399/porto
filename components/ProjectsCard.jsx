@@ -5,7 +5,7 @@ import { EyeIcon, CodeBracketIcon } from '@heroicons/react/24/outline'
 
 const ProjectsCard = ({imgUrl, title, description, gitUrl, preViewUrl}) => {
   return (
-    <div>
+    <div >
         <div 
         className='h-52 md:h-72 relative group rounded-t-xl'
         style={{background: `url(${imgUrl})`, backgroundSize: "cover"}}>
@@ -18,7 +18,7 @@ const ProjectsCard = ({imgUrl, title, description, gitUrl, preViewUrl}) => {
             </Link>
           </div>
         </div>
-        <div className='text-white rounded-b-xl bg-[#181818] py-6 px-4'>
+        <div className='text-white rounded-b-xl bg-cyan-900 dark:bg-[#181818] py-6 px-4 shadow-md'>
             <h5 className='text-xl font-semibold mb-2'>{title}</h5>
             <p className='text-[#ADB7BE]'>{description}</p>
         </div>

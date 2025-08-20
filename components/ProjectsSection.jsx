@@ -117,8 +117,8 @@ const ProjectsSection = () => {
   
   return (
     <>
-      <h2 data-aos="zoom-out-down" className='text-center text-4xl font-bold mt-4 text-white'>MY PROJECTS</h2>
-      <div className='text-white flex flex-row justify-center items-center gap-2 py-6'>
+      <h2 data-aos="zoom-out-down" className='text-center text-4xl font-bold mt-4 text-cyan-900 dark:text-white'>MY PROJECTS</h2>
+      <div className='text-cyan-400 dark:text-white flex flex-row justify-center items-center gap-2 py-6'>
         <ProjectTag 
           onClick={handleTagChange}
           name="All"

@@ -73,50 +73,50 @@ const EmailSextion = () => {
             data-aos="fade-down"
             data-aos-easing="linear"
             data-aos-duration="1000"
-            className='text-xl font-bold text-white my-2'>Let&apos;s Connect</h5>
+            className='text-xl font-bold text-cyan-900 dark:text-white my-2'>Let&apos;s Connect</h5>
             <p 
             data-aos="fade-right"
             data-aos-offset="300"
             data-aos-duration="1000"
 
-            className='text-[#ADB7BE] mb-4 max-w-md'>
+            className='text-cyan-900 dark:text-[#ADB7BE] mb-4 max-w-md'>
                 {" "}
                 I&apos;m currently looking for new opportunities, my inbox is always open.
-                Whether its a question or you just wanna say hi,<span className='text-orange-500'> i&apos;ll do my best to get back to you.</span>
+                Whether its a question or you just wanna say hi,<span className='text-green-400'> i&apos;ll do my best to get back to you.</span>
             </p>
            
         </div>
             <div data-aos="flip-left"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="2000">
-                <form className='flex flex-col gap-4' onSubmit={handleSubmit}>
+                <form className='flex flex-col gap-3' onSubmit={handleSubmit}>
                     <div className='mb-6'>
-                        <label className='text-white block mb-2 text-sm font-medium' htmlFor="email" type='email'>Your Email</label>
+                        <label className='text-black dark:text-white block mb-2 text-sm font-medium' htmlFor="email" type='email'>Your Email</label>
                         <input
-                        className='bg-[#18191E] border-[#33353F] placeholder-[#9CA2A9] text-gray-100 rounded-lg text-sm block w-full p-2.5'
+                        className='bg-cyan-900 bg-opacity-95 dark:bg-[#18191E] border-[#33353F] placeholder-[#9CA2A9] text-gray-100 rounded-lg text-sm block w-full p-2.5'
                         name='email' type='email' id='email' required placeholder='Email here....'/>
                     </div>
                     <div className='mb-4'>
-                        <label className='text-white block mb-2 text-sm font-medium' htmlFor="subject" type='text'>Subject</label>
+                        <label className='text-black dark:text-white block mb-2 text-sm font-medium' htmlFor="subject" type='text'>Subject</label>
                         <input
-                        className='bg-[#18191E] border-[#33353F] placeholder-[#9CA2A9] text-gray-100 rounded-lg text-sm block w-full p-2.5'
+                        className='bg-cyan-900 bg-opacity-95 dark:bg-[#18191E] border-[#33353F] placeholder-[#9CA2A9] text-gray-100 rounded-lg text-sm block w-full p-2.5'
                         name='subject' type='text' id='subject' required placeholder='Subject here....'/>
                     </div>
 
                     <div>
                         <label htmlFor="message"
-                        className='text-white block mb-2 text-sm font-medium'
+                        className='text-black dark:text-white block mb-2 text-sm font-medium'
                         >Message</label>
                         <textarea 
                         name='message'
                         id='message'
-                        className='bg-[#18191E] border-[#33353F] placeholder-[#9CA2A9] text-gray-100 rounded-lg text-sm block w-full p-2.5'
+                        className='bg-cyan-900 bg-opacity-95 dark:bg-[#18191E] border-[#33353F] placeholder-[#9CA2A9] text-gray-100 rounded-lg text-sm block w-full p-2.5'
                         placeholder="Talk to edister here......"
                         rows={9}
                         />
                     </div>
                     <div>
-                        <button type='submit' className='bg-orange-400 mt-4 hover:bg-slate-400 text-white rounded-lg font-medium p-2.5 w-full'>
+                        <button type='submit' className='bg-cyan-400 dark:bg-orange-700 mt-4 hover:bg-slate-400 text-white rounded-lg font-medium p-2.5 w-full'>
                             SEND MESSAGE
                         </button>
                         

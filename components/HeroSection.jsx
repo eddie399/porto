@@ -21,7 +21,7 @@ const HeroSection = () => {
                  data-aos="fade-right"
                  data-aos-offset="300"
                  data-aos-easing="ease-in-sine"
-                className='text-white text-2xl sm:text-3xl lg:text-7xl lg:leading-normal font-extrabold mb-4'>
+                className='text-cyan-900 dark:text-white text-2xl sm:text-3xl lg:text-7xl lg:leading-normal font-extrabold mb-4'>
                     <span className='text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-800'>Hello, I&apos;m Edister{" "}
 
                     </span>
@@ -47,7 +47,7 @@ const HeroSection = () => {
                 </h1>
                 <p 
                 data-aos="zoom-in-right"
-                className='text-gray-400 text-base sm:text-lg mb-6 lg:text-xl'> I believe that you should{" "}
+                className='text-cyan-900 dark:text-gray-400 text-base sm:text-lg mb-6 lg:text-xl'> I believe that you should{" "}
               <span className="font-bold text-orange-500">
                 never stop growing
               </span>{" "}
@@ -70,7 +70,7 @@ const HeroSection = () => {
                 </div>
             </div>
             <div className="col-span-4 place-self-center mt-4 lg:mt-0">
-                 <div data-aos="zoom-in"className='rounded-lg relative bg-[#181818] w-[200px] h-[200px] lg:h-[300px] lg:w-[300px] mix-blend-lighten'>
+                 <div data-aos="zoom-in"className='rounded-lg relative bg-gray-100 dark:bg-[#1c1d22] w-[300px] h-[300px] lg:h-[400px] lg:w-[400px]'>
                    <Image
                    className='absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 opacity-80'
                    src={pass}
