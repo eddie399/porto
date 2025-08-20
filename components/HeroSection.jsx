@@ -60,7 +60,7 @@ const HeroSection = () => {
                   <a href="#contact">
                     <button data-aos="flip-left" className='px-6 py-2 rounded-full mr-3 text-white width-full sm:w-fit bg-gradient-to-br from-blue-400 via-green-400 to-purple-800 hover:bg-slate-800'>Hire Me</button>
                   </a>
-                   <a href="/Edister_Ndamera_Resume.pdf" download="resume">
+                   <a href="/Edister_Ndamera_Resume.pdf" download="Edister_ndamera_CV">
                         <button data-aos="flip-right" className='px-1 py-1 rounded-full mr-3 width-full sm:w-fit bg-gradient-to-br from-orange-500 via-purple-400 to-orange-800  hover:bg-slate-800 text-white mt-3'>
                         
                             <span className='block bg-slate-400 hover:bg-slate-800 rounded-full px-5 py-1'>Download CV</span>
