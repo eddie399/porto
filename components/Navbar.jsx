@@ -39,7 +39,7 @@ const Navbar = () => {
     }
   };
   return (
-    <nav className='fixed bg-white/100 mx-auto shadow-md top-0 left-0 right-0 z-10 dark:bg-[#212121] dark:bg-opacity-96 backdrop-blur-md dark:shadow-lg dark:border-b dark:border-orange-800'>
+    <nav className='fixed bg-white/100 mx-auto shadow-md top-0 left-0 right-0 z-10 dark:bg-[#212121] dark:bg-opacity-96 backdrop-blur-md dark:shadow-lg dark:shodow-orange-500/50'>
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-6 ">
         <Link
           href={"/"}
@@ -62,11 +62,11 @@ const Navbar = () => {
         <div className='mobile-menu block md:hidden relative top-2'>
           {
             !navbarOpen ? (
-              <button onClick={() => setNavbarOpen(true)} className='flex items-center px-3 py-2 rounded border-orange-400 text-cyan-900 dark:text-orange-700'>
+              <button onClick={() => setNavbarOpen(true)} className='flex items-center px-3 py-2 rounded border-orange-400 text-cyan-900 hover:text-cyan-400 dark:text-orange-700'>
                 <Bars3Icon className='h-6 w-5' />
               </button>
             ) : (
-              <button onClick={() => setNavbarOpen(false)} className='flex items-center px-3 py-2 rounded border-orange-400 text-white hover:text-cyan-400 hover:border-white'>
+              <button onClick={() => setNavbarOpen(false)} className='flex items-center px-3 py-2 border-orange-400 text-cyan-900 hover:text-cyan-400 '>
                 <XMarkIcon className='h-6 w-5' />
               </button>
             )
