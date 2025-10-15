@@ -22,7 +22,7 @@ const ProjectsData =[
         image: "/images/clean.png",
         tag: ["All", "Mobile"],
         gitUrl: "/",
-        preViewUrl: "https://venduzamw.vercel.app/",
+        preViewUrl: "https://clean-pro-sigma.vercel.app/",
     },
 
      {
