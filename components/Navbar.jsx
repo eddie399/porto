@@ -53,7 +53,7 @@ const Navbar = () => {
         <div className="flex items-center flex-1 justify-end">
           <button
             onClick={toggleDarkMode}
-            className='text-cyan-900 focus:ring-2 focus:ring-cyan-400 font-medium rounded-xl text-sm px-0 py-0 mt-4 mr-1 lg:ml-8 dark:text-orange-700 focus:outline-none dark:focus:ring-orange-700 order-1 md:order-0'
+            className='text-cyan-900 lg:mb-4 focus:ring-2 focus:ring-cyan-400 font-medium rounded-xl text-sm px-0 py-0 mt-4 mr-1 lg:mr-8 dark:text-orange-700 focus:outline-none dark:focus:ring-orange-700 order-1 md:order-0'
           >
             {darkMode ? <MoonIcon className='w-5 h-5 inline-block' /> : <SunIcon className='h-5 w-5 inline-block' />}
           </button>
@@ -74,9 +74,9 @@ const Navbar = () => {
 
           <button
             onClick={toggleDarkMode}
-            className='hidden md:block text-white bg-black/50 hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 font-medium rounded-full text-sm bg-gray-300 px-4 py-2 dark:bg-white dark:hover:bg-orange-700 focus:outline-none dark:focus:ring-orange-800'
+            className='hidden md:block text-white lg:ml-4 lg:mt-2 bg-black/50 hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 font-medium rounded-full text-sm bg-gray-300 px-4 py-2 dark:bg-white dark:hover:bg-orange-700 focus:outline-none dark:focus:ring-orange-800'
           >
-            {darkMode ? <MoonIcon className='w-5 h-5 inline-block ml-2' /> : <SunIcon className='h-5 w-5 inline-block ml-2' />}
+            {darkMode ? <MoonIcon className='w-5 h-5 inline-block' /> : <SunIcon className='h-5 w-5 inline-block ml-2 ' />}
           </button>
         </div>
         <div className="menu hidden md:block md:w-auto" id="navbar">

@@ -18,7 +18,7 @@ const ProjectsData =[
     {
         id: 2,
         title: "ShinySpaces",
-        description: "Built with Next.js 19, TypeScript, JavaScript, Stripe <br/> ShinySpaces is a modern web app that lets users book and pay for cleaning services inline with ease and secure payment options through Stripe integration.",
+        description: "Built with Next.js 19, TypeScript, JavaScript, Stripe ShinySpaces is a modern web app that lets users book and pay for cleaning services inline with ease and secure payment options through Stripe integration.",
         image: "/images/clean.png",
         tag: ["All", "Mobile"],
         gitUrl: "/",
