@@ -47,8 +47,8 @@ const HeroSection = () => {
                 </h1>
                 <p 
                 data-aos="zoom-in-right"
-                className='text-cyan-900 dark:text-gray-400 text-base sm:text-lg mb-6 lg:text-xl'> I believe in continuous growth {" "}
-              <span className="font-bold text-orange-500">
+                className='text-cyan-900 dark:text-gray-400 text-base tracking-tight sm:text-lg mb-6 lg:text-xl'> I believe in continuous growth {" "}
+                  <span className="font-bold text-orange-500">
                 and strive to expand my skills
               </span>{" "}
               through innovation and learning. As a 
@@ -74,7 +74,7 @@ const HeroSection = () => {
                 </div>
             </div>
             <div className="col-span-4 place-self-center mt-4 lg:mt-0">
-                 <div data-aos="zoom-in"className='rounded-lg relative bg-gray-100 dark:bg-[#1c1d22] w-[300px] h-[300px] lg:h-[400px] lg:w-[400px]'>
+                 <div data-aos="zoom-in"className='rounded-full relative bg-gray-100 dark:bg-[#1c1d22] w-[300px] h-[300px] lg:h-[400px] lg:w-[400px]'>
                    <Image
                    className='absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 opacity-80'
                    src={pass}

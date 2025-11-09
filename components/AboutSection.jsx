@@ -96,10 +96,16 @@ const AboutSection = () => {
                 data-aos-easing="linear"
                 data-aos-duration="1000"
                 className="text-cyan-900 dark:text-gray-200 text-base lg:text-lg">
-                   through innovation and learning. As a dedicated Full Stack Developer
-                   , I am passionate about building efficient, user-focused digital solutions 
-                   that drive meaningful impact. I am eager to advance my career in technology and 
-                   remain .<span className='text-green-400 font-medium'> open to new opportunities that foster professional and technical growth.</span>
+                   I am a dedicated Full Stack Developer with a Bachelor 
+                   of Science in Computer Science from DMI-St. John The
+                    Baptist University, Blantyre, class of 2024. I have 
+                    gained hands-on experience in software development, 
+                    focusing on building robust, scalable, and efficient 
+                    web applications. Proficient in both front-end and back-end 
+                    technologies, I am committed to continuously advancing my skills
+                     in modern frameworks and development best practices. <span className='text-green-400 font-medium'> My goal is
+                      to contribute to innovative projects that leverage technology to
+                       solve complex problems and drive business success</span>
               
                 </p>
                 <div data-aos="fade-up"
