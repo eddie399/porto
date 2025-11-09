@@ -96,12 +96,10 @@ const AboutSection = () => {
                 data-aos-easing="linear"
                 data-aos-duration="1000"
                 className="text-cyan-900 dark:text-gray-200 text-base lg:text-lg">
-                    I graduated from DMI-St. John The Baptist University, Blantyre in 2024
-                with a BS in Computer Science and have been working in the
-                field ever since.
-                Outside of work, I have a wide range of hobbies and passions that keep me engaged,
-                including reading, playing sports, traveling, and creating YouTube videos,
-                I am always eager to explore new experiences and<span className='text-green-400 font-medium'> continously expand my skills and knowledge.</span>
+                   through innovation and learning. As a dedicated Full Stack Developer
+                   , I am passionate about building efficient, user-focused digital solutions 
+                   that drive meaningful impact. I am eager to advance my career in technology and 
+                   remain .<span className='text-green-400 font-medium'> open to new opportunities that foster professional and technical growth.</span>
               
                 </p>
                 <div data-aos="fade-up"

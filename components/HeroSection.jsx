@@ -47,14 +47,18 @@ const HeroSection = () => {
                 </h1>
                 <p 
                 data-aos="zoom-in-right"
-                className='text-cyan-900 dark:text-gray-400 text-base sm:text-lg mb-6 lg:text-xl'> I believe that you should{" "}
+                className='text-cyan-900 dark:text-gray-400 text-base sm:text-lg mb-6 lg:text-xl'> I believe in continuous growth {" "}
               <span className="font-bold text-orange-500">
-                never stop growing
+                and strive to expand my skills
               </span>{" "}
-              and that&#39;s what I strive to do, I have a passion for
-              technology and a desire to always push the limits of what is
-              possible. I am excited to see where my career takes me and am
-              always open to new opportunities. 
+              through innovation and learning. As a 
+              dedicated Full Stack Developer, I am 
+              passionate about building efficient, 
+              user-focused digital solutions that 
+              drive meaningful impact. I am eager to
+               advance my career in technology and 
+               remain open to new opportunities that 
+               foster professional and technical growth. 
                 </p>
                 <div className='pb-6'>
                   <a href="#contact">
