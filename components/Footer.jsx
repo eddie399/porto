@@ -68,7 +68,7 @@ const Footer = () => {
         
         <div className="container p-12 flex justify-between">
             <h2 className='text-cyan-900 dark:text-white text-2xl font-bold'>EDISTER<span className='text-orange-600 text-2xl font-bold'>.</span></h2>
-            <p className='mt-2'>© 2025 EJ PIXELS</p>
+            <p className='mt-2'>© 2026 EJ PIXELS</p>
         </div>
     </footer>
   )

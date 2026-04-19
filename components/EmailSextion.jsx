@@ -82,9 +82,14 @@ const EmailSextion = () => {
             className='text-cyan-900 dark:text-[#ADB7BE] mb-4 max-w-md'>
                 {" "}
                 I&apos;m currently looking for new opportunities, my inbox is always open.
-                Whether its a question or you just wanna say hi,<span className='text-green-400'> i&apos;ll do my best to get back to you.</span>
+                Whether its a question or you just wanna say hi,<span className='text-green-400 dark:text-orange-700'> i&apos;ll do my best to get back to you.</span>
+
+                <p className='pt-4 border-t dark:border-white border-cyan-900 mt-1'>+265 888 030 809</p>
+                <p>+265 991 175 732</p>
             </p>
            
+            
+
         </div>
             <div data-aos="flip-left"
             data-aos-easing="ease-out-cubic"
