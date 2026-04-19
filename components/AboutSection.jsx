@@ -16,6 +16,7 @@ const TAB_DATA =[
                 <li>PostgreSQL</li>
                 <li>React</li>
                 <li>WIX</li>
+                <li>Java</li>
 
             </ul>
         )
@@ -27,7 +28,7 @@ const TAB_DATA =[
             <ul className='list-disc pl-2 text-cyan-900 dark:text-gray-200'>
                 <li>
                     MUBAS <br/>
-                    Advanced Diploma in Telecommunications Engineering
+                    Diploma in Telecommunications Engineering
 
                 </li>
                 <br/>
