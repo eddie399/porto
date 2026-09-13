@@ -2,7 +2,6 @@
 import React, {useEffect} from 'react';
 import Image from "next/image";
 import AOS from "aos";
-import 'aos/dist/aos.css';
 import HeroSection from "../components/HeroSection";
 import Navbar from "../components/Navbar"
 import AboutSection from "../components/AboutSection"
@@ -26,9 +25,9 @@ export default function Home() {
   });
   
   return (
-    <main className='flex min-h-screen flex-col bg-[#ffffff] dark:bg-[#1c1d22] overflow-x-hidden'>
+    <main className='min-h-screen overflow-x-hidden bg-[#071014] text-white'>
       <Navbar />
-      <div className="container  mt-24 mx-auto py-4 px-12"> 
+      <div className="mx-auto mt-20 w-full max-w-7xl px-4 py-4 sm:px-6 lg:mt-24 lg:px-8">
         
         <HeroSection />
         <Achievements />

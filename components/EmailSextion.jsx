@@ -12,6 +12,7 @@ import Swal from 'sweetalert2'
 
 
 const EmailSextion = () => {
+    const [status, setStatus] = useState('idle');
     //const [emailSubmitted, setEmailSubmitted] =useState(false)
    // const handleSubmit = async (e) => {
       //  e.preventDefault();
@@ -41,6 +42,9 @@ const EmailSextion = () => {
    // };
    async function handleSubmit(event) {
     event.preventDefault();
+    if (status === 'sending') return;
+
+    setStatus('sending');
     const formData = new FormData(event.target);
 
     formData.append("access_key", "ce593529-ddd4-450d-8bbb-a64a40ed641a");
@@ -48,21 +52,30 @@ const EmailSextion = () => {
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
 
-    const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json"
-        },
-        body: json
-    });
-    const result = await response.json();
-    if (result.success) {
-        Swal.fire({
-            title: "Sent!",
-            text: "The message has been sent successfully!",
-            icon: "success"
-          });
+        try {
+            const response = await fetch("https://api.web3forms.com/submit", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        Accept: "application/json"
+                    },
+                    body: json
+            });
+            const result = await response.json();
+
+            if (!response.ok || !result.success) {
+                throw new Error(result.message || "Unable to send your message.");
+            }
+
+            setStatus('success');
+            event.target.reset();
+            Swal.fire({
+                    title: "Sent!",
+                    text: "The message has been sent successfully!",
+                    icon: "success"
+                });
+        } catch (error) {
+            setStatus('error');
     }
    }
   return (
@@ -121,9 +134,17 @@ const EmailSextion = () => {
                         />
                     </div>
                     <div>
-                        <button type='submit' className='bg-cyan-400 dark:bg-orange-700 mt-4 hover:bg-slate-400 text-white rounded-lg font-medium p-2.5 w-full'>
-                            SEND MESSAGE
+                                                <button type='submit' disabled={status === 'sending'} className='bg-cyan-400 dark:bg-orange-700 mt-4 hover:bg-slate-400 disabled:cursor-not-allowed disabled:opacity-60 text-white rounded-lg font-medium p-2.5 w-full'>
+                                                        {status === 'sending' ? 'SENDING...' : 'SEND MESSAGE'}
                         </button>
+                                                <p
+                                                    role="status"
+                                                    aria-live="polite"
+                                                    className={`mt-3 text-sm ${status === 'error' ? 'text-red-400' : 'text-emerald-400'}`}
+                                                >
+                                                    {status === 'success' && 'Your message was sent successfully.'}
+                                                    {status === 'error' && 'Something went wrong. Please try again or contact me directly.'}
+                                                </p>
                         
                     </div>
                 </form>

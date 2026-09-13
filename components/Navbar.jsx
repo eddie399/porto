@@ -39,12 +39,12 @@ const Navbar = () => {
     }
   };
   return (
-    <nav className='fixed bg-white/100 mx-auto shadow-md top-0 left-0 right-0 z-10 dark:bg-[#212121] dark:bg-opacity-96 backdrop-blur-md dark:shadow-lg dark:shodow-orange-500/50'>
-      <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-6 ">
+    <nav className='fixed left-0 right-0 top-0 z-10 border-b border-white/10 bg-[#071014]/85 shadow-lg shadow-black/10 backdrop-blur-xl'>
+      <div className="mx-auto flex w-full max-w-7xl flex-wrap items-center justify-between px-4 py-4 sm:px-6 lg:py-5 lg:px-8">
         <Link
           href={"/"}
           data-aos="zoom-in"
-          className="text-2xl md:text-5xl text-cyan-900 font-semibold dark:text-white"
+          className="text-xl font-black tracking-[0.18em] text-white sm:text-2xl"
         >
           EDISTER<span className='text-5xl text-orange-500'>.</span>
         </Link>
@@ -53,7 +53,8 @@ const Navbar = () => {
         <div className="flex items-center flex-1 justify-end">
           <button
             onClick={toggleDarkMode}
-            className='text-cyan-900 lg:mb-4 focus:ring-2 focus:ring-cyan-400 font-medium rounded-xl text-sm px-0 py-0 mt-4 mr-1 lg:mr-8 dark:text-orange-700 focus:outline-none dark:focus:ring-orange-700 order-1 md:order-0'
+            aria-label="Toggle color theme"
+            className='order-1 mr-1 rounded-xl px-0 py-0 text-orange-300 focus:ring-2 focus:ring-orange-400 md:order-0 lg:mr-8'
           >
             {darkMode ? <MoonIcon className='w-5 h-5 inline-block' /> : <SunIcon className='h-5 w-5 inline-block' />}
           </button>
@@ -62,11 +63,11 @@ const Navbar = () => {
         <div className='mobile-menu block md:hidden relative top-2'>
           {
             !navbarOpen ? (
-              <button onClick={() => setNavbarOpen(true)} className='flex items-center px-3 py-2 rounded border-orange-400 text-cyan-900 hover:text-cyan-400 dark:text-orange-700'>
+              <button onClick={() => setNavbarOpen(true)} aria-label="Open navigation menu" className='flex items-center rounded border-orange-400 px-3 py-2 text-orange-300 hover:text-white'>
                 <Bars3Icon className='h-6 w-5' />
               </button>
             ) : (
-              <button onClick={() => setNavbarOpen(false)} className='flex items-center px-3 py-2 border-orange-400 text-cyan-900 hover:text-cyan-400 '>
+              <button onClick={() => setNavbarOpen(false)} aria-label="Close navigation menu" className='flex items-center border-orange-400 px-3 py-2 text-orange-300 hover:text-white'>
                 <XMarkIcon className='h-6 w-5' />
               </button>
             )
@@ -80,7 +81,7 @@ const Navbar = () => {
           </button>
         </div>
         <div className="menu hidden md:block md:w-auto" id="navbar">
-          <ul data-aos="zoom-out-down" className="flex p-4 md:p-0 md:flex-row md:space-x-8">
+          <ul data-aos="zoom-out-down" className="flex p-4 md:gap-8 md:p-0">
             {
               navLinks.map((link, index) => (
                 <li key={index}>

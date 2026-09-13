@@ -1,8 +1,36 @@
+@import "aos/dist/aos.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 * {
-    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
-    transition-duration: 200ms;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #071014;
+    color: #f8fafc;
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+}
+
+::selection {
+    background: #f97316;
+    color: #071014;
+}
+
+button,
+a,
+input,
+textarea {
+    transition: color 180ms ease, background-color 180ms ease, border-color 180ms ease, opacity 180ms ease, transform 180ms ease;
+}
+
+:focus-visible {
+    outline: 2px solid #fb923c;
+    outline-offset: 3px;
 }
