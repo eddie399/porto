@@ -6,28 +6,11 @@ import { AiOutlineGithub } from "react-icons/ai"
 
 const ProjectsData =[
    
-    {
-        id: 1,
-        title: "Venduza Malawi",
-        description: "A Malawian E-commerce site. NextJS 15, Typescript, JavaScript, Stripe",
-        image: "/images/vend.png",
-        tag: ["All", "Mobile"],
-        gitUrl: "/",
-        preViewUrl: "https://venduzamw.vercel.app/",
-    },
+    
 
-    {
-        id: 2,
-        title: "ShinySpaces",
-        description: "Built with Next.js 19, TypeScript, JavaScript, Stripe ShinySpaces is a modern web app that lets users book and pay for cleaning services inline with ease and secure payment options through Stripe integration.",
-        image: "/images/clean.png",
-        tag: ["All", "Mobile"],
-        gitUrl: "/",
-        preViewUrl: "https://clean-pro-sigma.vercel.app/",
-    },
-
+    
      {
-        id: 3,
+        id: 1,
         title: "My Home",
         description: "A site where you can Buy, Sale, Rent a house or Shop",
         image: "/images/my_home.png",
@@ -38,7 +21,7 @@ const ProjectsData =[
 
 
     {
-      id: 4,
+      id: 2,
       title: "Vixen_Dashboard",
       description: "A site where you can Buy Electronic Gadgets. Built using Vite, React, TypeScript, JavaScript",
       image: "/images/vixen.png",
@@ -46,36 +29,9 @@ const ProjectsData =[
       gitUrl: "/",
       preViewUrl: "https://vixenshoppers.netlify.app/",
   },
-     {
-        id: 5,
-        title: "Eddy's Cafe",
-        description: "A coffee site, order now!. Free delivery",
-        image: "/images/coffee.png",
-        tag: ["All", "mobile"],
-        gitUrl: "/",
-        preViewUrl: "https://cafe-marine.netlify.app/",
-    },
-     {
-        id: 6,
-        title: "TIMELINE",
-        description: "TIMELINE Delivery Service Site. A site built using React, JSX, Vite, TSX",
-        image: "/images/timeline.png",
-        tag: ["All", "web"],
-        gitUrl: "/",
-        preViewUrl: "https://deliveryon.netlify.app/",
-      },
+   
     {
-      id: 7,
-      title: "Bliss Foods",
-      description: "Typescript, Javascript, Next.Js",
-      image: "/images/bliss.png",
-      tag: ["All", "web"],
-      gitUrl: "/",
-      preViewUrl: "https://blissfoods.netlify.app/",
-    },
-
-    {
-      id: 8,
+      id: 3,
       title: "MOTORWORLD",
       description: "MotorWorld Site. A site built using React, JSX, Vite, TSX",
       image: "/images/motor.png",
@@ -84,7 +40,7 @@ const ProjectsData =[
       preViewUrl: "https://motor-chi.vercel.app/",
     },
     {
-      id: 9,
+      id: 4,
       title: "Movie Site",
       description: "A Disney clone. A site built using React, JSX, Vite, and API integration for dynamic movie listing",
       image: "/images/disney.png",
@@ -93,7 +49,7 @@ const ProjectsData =[
       preViewUrl: "https://dsmoviesiteclone.netlify.app/",
     },
     {
-      id: 10,
+      id: 5,
       title: "Gadget Zone",
       description: "A site for all Electronic gadgets. A site built using React, JSX, Vite, and API integration for dynamic electronics listing",
       image: "/images/gadget.png",
@@ -114,6 +70,30 @@ const ProjectsData =[
 
 const featuredCaseStudies = [
   {
+    title: "Kreddix",
+    subtitle: "A platform for Malawians to access credit and manage their finances",
+    image: "/images/kreddix.png",
+    overview: "A platform for Malawians to access credit and manage their finances, including a credit score system, loan application process, and financial management tools.",
+    challenge: "Building trust between users and the platform, including ensuring data security and privacy, as well as providing a seamless user experience for loan applications and financial management.",
+    role: "Designed and built independently",
+    stack: ["Next.js", "TypeScript", "PostgreSQL", "JavaScript", "Stripe", "shadcn/ui", "Auth0", "2FA"],
+    link: "https://kreddix.vercel.app/auth/sign-in?redirect=%2F",
+    githubLink: 'https://github.com/eddie399/kreddix',
+  },
+
+  {
+    title: "Duka pos",
+    subtitle: "A mobile point-of-sale system for small businesses in Malawi, including inventory management, sales tracking, and customer management. Works offline and syncs data when internet is available.",
+    image: "/images/pos.png",
+    overview: "A mobile point-of-sale system for small businesses in Malawi, including inventory management, sales tracking, and customer management. Works offline and syncs data when internet is available.",
+    challenge: "Camera scanning for product barcodes, offline functionality, and data synchronization when internet is available.",
+    role: "Designed and built independently",
+    stack: ["Next.js", "TypeScript", "PostgreSQL", "JavaScript", "Stripe", "shadcn/ui", "Auth0", "2FA", "PWA", "Barcode scanning", 'Offline functionality', 'Data synchronization', ''],
+    link: "https://pos-one-rouge-92.vercel.app/login",
+    githubLink: 'https://github.com/eddie399/pos',
+  },
+
+  {
     title: "Venduza Malawi",
     subtitle: "Shop Malawi, wherever you are",
     image: "/images/vend.png",
@@ -122,7 +102,7 @@ const featuredCaseStudies = [
     role: "Designed and built independently",
     stack: ["Next.js", "TypeScript", "PostgreSQL", "JavaScript", "Stripe", "shadcn/ui"],
     link: "https://venduzamw.vercel.app/",
-    githubLink: null,
+    githubLink: 'https://github.com/eddie399/VenduzaStore',
   },
   {
     title: "ShinySpaces",
@@ -133,7 +113,7 @@ const featuredCaseStudies = [
     role: "Designed and built independently",
     stack: ["Next.js", "React", "TypeScript", "JavaScript", "Node.js", "PostgreSQL", "shadcn/ui"],
     link: "https://clean-pro-sigma.vercel.app/",
-    githubLink: null,
+    githubLink: 'https://github.com/eddie399/cleanPro',
   },
 ]
 
