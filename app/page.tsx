@@ -25,7 +25,7 @@ export default function Home() {
   });
   
   return (
-    <main className='min-h-screen overflow-x-hidden bg-[#071014] text-white'>
+    <main className='min-h-screen overflow-x-hidden'>
       <Navbar />
       <div className="mx-auto mt-20 w-full max-w-7xl px-4 py-4 sm:px-6 lg:mt-24 lg:px-8">
         

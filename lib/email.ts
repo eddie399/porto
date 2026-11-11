@@ -1,12 +1,15 @@
 import nodemailer from "nodemailer"
 
-export async function  sendMail({to,name,subject,body}:{
-    to:string 
-    name:string 
-    subject:string 
-    body:string
-}){
+export async function sendMail({replyTo, subject, text}: {
+    replyTo: string
+    subject: string
+    text: string
+}) {
     const {SMTP_EMAIL, SMTP_PASSWORD} = process.env
+
+    if (!SMTP_EMAIL || !SMTP_PASSWORD) {
+        throw new Error("SMTP email configuration is missing.")
+    }
 
     const transport = nodemailer.createTransport({
         service: "gmail",
@@ -15,21 +18,11 @@ export async function  sendMail({to,name,subject,body}:{
             pass: SMTP_PASSWORD
         },
     });
-    try{
-        const testResault = await transport.verify();
-        console.log(testResault);
-    }
-    catch(error){
-        console.log(error)
-    }
-
-    try{
-        const sendResault = await transport.sendMail({
-            from: SMTP_EMAIL, to, subject, html:body
-        })
-        console.log(sendResault);
-    }
-    catch(error){
-        console.log(error)
-    }
+    return transport.sendMail({
+        from: SMTP_EMAIL,
+        to: SMTP_EMAIL,
+        replyTo,
+        subject,
+        text,
+    })
 }

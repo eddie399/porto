@@ -1,11 +1,5 @@
 "use client"
 import React, {useState} from 'react';
-import github from '../public/github.svg';
-import sapp from '../public/sapp.svg';
-import Linked from '../public/Link.svg';
-
-import Link from 'next/link';
-import Image from 'next/image';
 import Swal from 'sweetalert2'
 
 
@@ -13,62 +7,30 @@ import Swal from 'sweetalert2'
 
 const EmailSextion = () => {
     const [status, setStatus] = useState('idle');
-    //const [emailSubmitted, setEmailSubmitted] =useState(false)
-   // const handleSubmit = async (e) => {
-      //  e.preventDefault();
-       // const data = {
-      //      email: e.target.email.value,
-       //     subject: e.target.subject.value,
-     //       message: e.target.message.value,
-
-      //  }
-      //  const JSONdata = JSON.stringify(data);
-      //  const endpoint = '/api/send';
-    
-      //  const options = {
-        //    method: 'POST',
-        //    headers: {
-       //         "Content-Type": "application/json",
-     //       },
-    //        body: JSONdata,
-    //    }
-     //   const response = await fetch(endpoint, options);
-     //   const resData = await response.json();
-
-     //   if (resData.status === 200){
-     //       console.log('sent successfully');
-    //        setEmailSubmitted(true);
-      //  }
-   // };
    async function handleSubmit(event) {
     event.preventDefault();
     if (status === 'sending') return;
 
     setStatus('sending');
-    const formData = new FormData(event.target);
-
-    formData.append("access_key", "ce593529-ddd4-450d-8bbb-a64a40ed641a");
-
-    const object = Object.fromEntries(formData);
-    const json = JSON.stringify(object);
+        const form = event.currentTarget;
+        const formData = new FormData(form);
 
         try {
-            const response = await fetch("https://api.web3forms.com/submit", {
+                        const response = await fetch("/api/send", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
-                        Accept: "application/json"
                     },
-                    body: json
+                                        body: JSON.stringify(Object.fromEntries(formData))
             });
             const result = await response.json();
 
-            if (!response.ok || !result.success) {
+                        if (!response.ok || !result.success) {
                 throw new Error(result.message || "Unable to send your message.");
             }
 
             setStatus('success');
-            event.target.reset();
+                        form.reset();
             Swal.fire({
                     title: "Sent!",
                     text: "The message has been sent successfully!",
@@ -94,8 +56,8 @@ const EmailSextion = () => {
 
             className='text-cyan-900 dark:text-[#ADB7BE] mb-4 max-w-md'>
                 {" "}
-                I&apos;m currently looking for new opportunities, my inbox is always open.
-                Whether its a question or you just wanna say hi,<span className='text-green-400 dark:text-orange-700'> i&apos;ll do my best to get back to you.</span>
+I&apos;m always open to discussing new projects,
+ creative ideas, or opportunities to be part of your visions. Feel free to reach out to me through any of the following channels:
 
                 <p className='pt-4 border-t dark:border-white border-cyan-900 mt-1'>+265 888 030 809</p>
                 <p>+265 991 175 732</p>
@@ -108,17 +70,25 @@ const EmailSextion = () => {
             data-aos-easing="ease-out-cubic"
             data-aos-duration="2000">
                 <form className='flex flex-col gap-3' onSubmit={handleSubmit}>
+                    <input
+                        type="text"
+                        name="website"
+                        tabIndex={-1}
+                        autoComplete="off"
+                        aria-hidden="true"
+                        className="hidden"
+                    />
                     <div className='mb-6'>
                         <label className='text-black dark:text-white block mb-2 text-sm font-medium' htmlFor="email" type='email'>Your Email</label>
                         <input
-                        className='bg-cyan-900 bg-opacity-95 dark:bg-[#18191E] border-[#33353F] placeholder-[#9CA2A9] text-gray-100 rounded-lg text-sm block w-full p-2.5'
-                        name='email' type='email' id='email' required placeholder='Email here....'/>
+                        className='block w-full rounded-lg border border-slate-300 bg-white p-2.5 text-sm text-slate-900 placeholder-slate-500 dark:border-[#33353F] dark:bg-[#18191E] dark:text-gray-100 dark:placeholder-[#9CA2A9]'
+                        name='email' type='email' id='email' required maxLength={254} placeholder='Email here....'/>
                     </div>
                     <div className='mb-4'>
                         <label className='text-black dark:text-white block mb-2 text-sm font-medium' htmlFor="subject" type='text'>Subject</label>
                         <input
-                        className='bg-cyan-900 bg-opacity-95 dark:bg-[#18191E] border-[#33353F] placeholder-[#9CA2A9] text-gray-100 rounded-lg text-sm block w-full p-2.5'
-                        name='subject' type='text' id='subject' required placeholder='Subject here....'/>
+                        className='block w-full rounded-lg border border-slate-300 bg-white p-2.5 text-sm text-slate-900 placeholder-slate-500 dark:border-[#33353F] dark:bg-[#18191E] dark:text-gray-100 dark:placeholder-[#9CA2A9]'
+                        name='subject' type='text' id='subject' required maxLength={200} placeholder='Subject here....'/>
                     </div>
 
                     <div>
@@ -128,13 +98,15 @@ const EmailSextion = () => {
                         <textarea 
                         name='message'
                         id='message'
-                        className='bg-cyan-900 bg-opacity-95 dark:bg-[#18191E] border-[#33353F] placeholder-[#9CA2A9] text-gray-100 rounded-lg text-sm block w-full p-2.5'
+                        required
+                        maxLength={10000}
+                        className='block w-full rounded-lg border border-slate-300 bg-white p-2.5 text-sm text-slate-900 placeholder-slate-500 dark:border-[#33353F] dark:bg-[#18191E] dark:text-gray-100 dark:placeholder-[#9CA2A9]'
                         placeholder="Talk to edister here......"
                         rows={9}
                         />
                     </div>
                     <div>
-                                                <button type='submit' disabled={status === 'sending'} className='bg-cyan-400 dark:bg-orange-700 mt-4 hover:bg-slate-400 disabled:cursor-not-allowed disabled:opacity-60 text-white rounded-lg font-medium p-2.5 w-full'>
+                                                <button type='submit' disabled={status === 'sending'} className='mt-4 w-full rounded-lg bg-orange-700 p-2.5 font-medium text-white hover:bg-orange-800 disabled:cursor-not-allowed disabled:opacity-60 dark:bg-orange-700 dark:hover:bg-orange-600'>
                                                         {status === 'sending' ? 'SENDING...' : 'SEND MESSAGE'}
                         </button>
                                                 <p

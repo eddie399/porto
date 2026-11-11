@@ -12,10 +12,29 @@ html {
     scroll-behavior: smooth;
 }
 
+:root {
+    color-scheme: light;
+}
+
+:root.dark {
+    color-scheme: dark;
+}
+
+html,
 body {
+    min-height: 100%;
+}
+
+body {
+    background: #f8fafc;
+    color: #0f172a;
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+    transition: background-color 180ms ease, color 180ms ease;
+}
+
+.dark body {
     background: #071014;
     color: #f8fafc;
-    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
 }
 
 ::selection {

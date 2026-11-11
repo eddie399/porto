@@ -18,9 +18,9 @@ const ProjectsCard = ({imgUrl, title, description, gitUrl, preViewUrl}) => {
             </Link>
           </div>
         </div>
-        <div className='text-white rounded-b-xl bg-cyan-900 dark:bg-[#181818] py-6 px-4 shadow-md'>
+        <div className='rounded-b-xl bg-white py-6 px-4 text-slate-900 shadow-md dark:bg-[#181818] dark:text-white'>
             <h5 className='text-xl font-semibold mb-2'>{title}</h5>
-            <p className='text-[#ADB7BE]'>{description}</p>
+            <p className='text-slate-600 dark:text-[#ADB7BE]'>{description}</p>
         </div>
     </div>
   )

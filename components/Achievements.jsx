@@ -38,7 +38,7 @@ const achievementList = [
 const Achievements = () => {
   return (
     <div className='py-8 px-4 xl:gap-16 sm:py-16 xl:px-12'>
-        <div className="sm:border-cyan-900 shadow-sm sm:border rounded-md py-8 px-19 flex flex-row items-center justify-between">
+        <div className="shadow-sm sm:rounded-md sm:border sm:border-slate-300 sm:px-8 sm:py-8 flex flex-row items-center justify-between dark:sm:border-cyan-900">
             {
                 achievementList.map((achievement, index) => {
                     return (
@@ -68,7 +68,7 @@ const Achievements = () => {
                                 {achievement.postfix}
                             </h2>
                             <p
-                            className='text-base text-[#ADB7BE] '
+                            className='text-base text-slate-600 dark:text-[#ADB7BE] '
                             >{achievement.metrics}</p>
                         </div>
                     )
